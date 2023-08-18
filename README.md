@@ -70,4 +70,7 @@ Let's go through all 5 cases and comment on each:
 Pretty much I cannot think of any other way to try to trick the C compiler into doing the wrong thing, and so - even though  case 2 requires a redundant ->Employee that is not required in C++ 
 and Java - COG is compile-time type-safe.
 
+NOTE This consumes no extra CPU cycles at runtime, since all checks are performed by the C language, and there is no need to manually add a tag, that would consume extra memory.
+NOTE Finally, note that this could be retrofitted into existing C language object models while maintaining both source code and binary backward compatibility.
+
 Remember you read it here first :-)
