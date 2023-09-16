@@ -1,9 +1,13 @@
 #pragma once
 
-#include "cog.h"
-
-struct Void
+typedef struct Void
 {
-};
+#define _membersOf(CLASS) \
+	castsOf##CLASS; \
+	fieldsOf##CLASS
 
-typedef struct Void Void;
+#define membersOf(CLASS) \
+	_membersOf(CLASS)
+
+} Void;
+

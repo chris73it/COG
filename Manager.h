@@ -2,6 +2,8 @@
 
 #include "Employee.h"
 
+typedef struct Manager
+{
 #define castsOfManager \
 	Employee Employee[0]; \
 	castsOfEmployee
@@ -10,7 +12,6 @@
 	fieldsOfEmployee; \
 	Employee* m_reports
 
-typedef struct Manager
-{
     membersOf(Manager);
 } Manager;
+

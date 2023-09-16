@@ -2,6 +2,8 @@
 
 #include "Object.h"
 
+typedef struct Employee
+{
 #define castsOfEmployee \
 	Object Object[0]; \
 	castsOfObject
@@ -10,7 +12,6 @@
 	fieldsOfObject; \
 	unsigned int m_id
 
-typedef struct Employee
-{
     membersOf(Employee);
 } Employee;
+
